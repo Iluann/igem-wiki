@@ -6,7 +6,8 @@ import { stringToSlug } from "./src/utils";
 export default () => {
   const env = loadEnv("dev", process.cwd());
   return defineConfig({
-    base: `/${stringToSlug(env.VITE_TEAM_NAME)}/`,
+    base: `/igem-wiki/`,
     plugins: [react()],
   });
 };
+
